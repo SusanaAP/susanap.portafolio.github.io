@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Susana Arenas</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+    <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+ 
+</head>
+<body>
+    <nav class="navegador__header">
+        <div class="container nav">
+            <div class="logo">
+                <h1><a href="#seccion1"><img src="imgs/Logo_Mesa de trabajo 1 copia.svg" alt="Logo"></a> </h1>
+            </div>
+            <ul>
+                <li><a href="#seccion1">Sobre mí</a></li>
+                <li><a href="#seccion2">Mis trabajos</a></li>
+                <li><a href="#seccion3">Experiencia</a></li>
+                <li><a href="#seccion4">Contáctame</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="bienvenida" id="seccion1">
+            <div class="foto">
+            <img src="imgs/Mesa de trabajo 1 copia 2.png" alt="Foto Susana">
+            </div>
+
+            <div class="sobremi">
+                <h1>Sobre mí</h1>
+                <p>Me caracterizo por ser una persona creativa, responsable,
+            proactiva y puntual. Disfruto aprender cosas nuevas y aprovechar
+            mi tiempo libre para actualizarme y así estar siempre a la vanguardia 
+            del diseño y la publicidad.</p> <br>
+
+            Tengo conocimientos en creación de marca, diseño de
+            piezas para redes sociales, gráficas y animadas, fotografía básica y muy
+            buena ortografía.
+
+            <div  class="down animate__animated animate__heartBeat animate__infinite	infinite">
+                <a href="#seccion2"><i class="fa-solid fa-circle-chevron-down"></i></a>
+                </div>
+
+            <section class="logos">
+                <article class="item-logo">
+                 <a href="https://www.behance.net/susanaarenas"><img src="imgs/behance.png" alt="Behance"></a>
+                </article>
+        
+                <article class="item-logo">
+                <a href="https://www.instagram.com/susaaaanaap/"><img src="imgs/instagram.png" alt="Instagram"></a>
+                </article>
+            
+            </div>
+            
+    </section>
+     
+    <section class="mis_trabajos" id="seccion2">
+        <div class="wrap_dos">
+            <h1>Un poco de lo que hago</h1>
+            <p>Estos son algunos de los trabajos que he realizado para diferentes marcas</p>
+
+
+     <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="imgs/portafolio1.jpg" alt="primera"></div>
+              <div class="swiper-slide"><img src="imgs/portafolio2.jpg" alt="segunda"></div>
+              <div class="swiper-slide"><img src="imgs/portafolio3.jpg" alt="tercer"></div>
+              <div class="swiper-slide"><img src="imgs/portafolio4.jpg" alt="cuarta"></div>
+              <div class="swiper-slide"><img src="imgs/portafolio5.jpg" alt="quinta"></div>
+              <div class="swiper-slide"><img src="imgs/portafolio6.jpg" alt="sexta"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+</section>
+
+<section class="mi_experiencia" id="seccion3">
+    <div class="wrap_tres">
+        <h1>¿Dónde he trabajado?</h1>
+        <p>He tenido la oportunidad de pertenecer a diferentes empresas, pero estas son las experiencias más recientes</p>
+
+        <section class="empresas">
+            <article class="venecol">
+                <img src="imgs/LogoVenecol.png">
+                <h3>2017 - actualmente</h3>
+            </article>
+    
+            <article class="videobase">
+                <img src="imgs/LogoVideoBase.png">
+                <h3>2021 - actualmente</h3>
+            </article>
+        </section>
+    </div>
+</section>
+
+<section class="contactame" id="seccion4">
+    <div class="wrap_cuatro">
+        <h1>Contáctame</h1>
+        <p>Escanéa este código para comunicarte más fácil conmigo</p>
+        <img src="imgs/QR whatsapp.png" alt="whatsapp">
+        <h2>3105477881</h2>
+    </div>
+</section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+
+</body>
+</html>

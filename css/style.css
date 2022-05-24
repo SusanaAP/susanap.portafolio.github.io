@@ -1,0 +1,422 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-primario: #f4f3ee;
+    --color-segundario: #001524;
+    --color-terciario: #15616D;
+    --tipografia: 15px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+img {
+    width: 60%;
+    height: auto;
+}
+
+
+body {
+    background-color: var(--color-primario);
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav {
+    background-color: var(--color-primario);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav .nav {
+    padding: .9em 0em;
+}
+
+
+nav .container ul li {
+    display: inline;
+    padding: .2em;
+}
+
+nav .container ul li a{
+    font-size: 1em;
+    color: var(--color-segundario);
+    padding: .8em 1em;
+    border-radius: 10px;
+}
+
+nav .container ul li a:hover{
+    color: var(--color-primario);
+    background-color:var(--color-terciario);
+}
+
+
+section .foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 35%;
+    height: 95vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    color: var(--color-segundario);
+    font-size: 1em;
+}
+
+section .sobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 35%;
+    height: 95vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    color: var(--color-segundario);
+    font-size: 1em;
+}
+
+.logos {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+section .wrap_dos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 35%;
+    height: 95vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    color: var(--color-primario);
+    font-size: 1em;
+}
+
+section .wrap_tres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 70%;
+    height: 70vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    color: var(--color-primario);
+    font-size: 1em;
+}
+
+.empresas {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.videobase {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding-right: 1em;
+}
+
+.venecol {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding-right: 1em;
+}
+
+
+section .wrap_cuatro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 35%;
+    height: 75vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    color: var(--color-segundario);
+    font-size: 1em;
+}
+
+
+
+.bienvenida {
+    background-color: var(--color-primario);
+}
+
+.bienvenida {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.bienvenida a{
+    color: var(--color-segundario);
+}
+
+.bienvenida a:hover{
+    color: var(--color-terciario);
+}
+
+.mis_trabajos {
+    background-color: var(--color-segundario);
+    margin-top: -40px;
+
+}
+
+.mi_experiencia {
+    background-color: var(--color-terciario);
+}
+
+.contactactame {
+    background-color: var(--color-terciario);
+}
+
+/*slider*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--color-primario);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    width: 100%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 100%;
+  }
+
+  /*final de slider*/
+
+  @media (min-width: 768px) and (max-width: 1024px)  {
+
+    .container{
+        flex-direction: column;
+    }
+
+    nav .container ul {
+        justify-content: center;
+        margin-right: -8em;
+        margin-left: -8em;
+        display: flex; 
+        flex-wrap: wrap;   
+    }
+
+    nav .container ul li a {
+        font-size: 15px;
+        padding: 2em;
+    }
+
+    .foto{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 300px;
+        align-self: center;
+    }
+
+    .sobremi {
+        flex-direction: column;
+        font-size: 0.1em
+    }
+   
+    .experiencia{
+        flex-direction: column;
+        
+    }
+
+    .empresas{
+        margin: auto;
+
+    }
+} 
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .container{
+        flex-direction: column;
+
+    }
+
+    nav .container ul {
+        justify-content: center;
+        margin-right: -8em;
+        margin-left: -8em;
+        display: flex; 
+        flex-wrap: wrap;   
+    }
+
+    nav .container ul li a {
+        font-size: 15px;
+        padding: .5em;
+    }
+
+    .logo {
+        margin-left:2em;
+    }
+
+    .wrap_uno{
+        flex-direction: column;
+        padding-left: .1em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+    }
+
+    .experiencia{
+        padding-bottom: 50em;
+        padding-top: 5em;
+    }
+
+    .empresas{
+        flex-wrap: wrap;
+        width: 300px;
+        align-self: center;
+
+    }
+
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .container{
+        flex-direction: column;
+    }
+
+    nav .container ul {
+        justify-content: center;
+        margin-right: -5em;
+        margin-left: -5em;
+        display: flex; 
+        flex-wrap: wrap;   
+    }
+
+    nav .container ul li a {
+        font-size: 12px;
+        padding: .3em;
+    }
+
+    .logo {
+        margin-left:2em;
+    }
+
+    .wrap_uno{
+        flex-direction: column;
+        padding-left: .1em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+    }
+
+
+    .experiencia{
+        padding-bottom: 40em;
+        padding-top: 5em;
+        padding-bottom: 50em;
+    }
+
+    .empresas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .alcaldia {
+        font-size: 10px;
+        width: 200px;
+        padding-bottom: 1em;
+    }
+    
+    .tpm {
+        text-align: center;
+        font-size: 10px;
+        width: 200px;
+        padding-bottom: 1em;
+    }
+    
+    .cesde {
+        text-align: center;
+        font-size: 10px;
+        width: 200px;
+        padding-bottom: 1em;
+    }
+    
+    .morales {
+        text-align: center;
+        font-size: 10px;
+        width: 200px;
+        padding-bottom: 1em;
+    }
+
+    .portafolio {
+        padding-top: -2em;
+        margin-left: -2em;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 80%;
+      }
+
+
+}
